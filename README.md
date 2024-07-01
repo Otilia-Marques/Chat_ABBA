@@ -46,5 +46,6 @@ A aplicação foi construída usando HTML, CSS, JavaScript e a API Socket.io.
 3. Crie ou junte-se a uma sala ou grupo.
 4. Comece a enviar mensagens e fotos!
 
-Contato
+## Contato
+
 *Desenvolvido por* - *ABBA*
