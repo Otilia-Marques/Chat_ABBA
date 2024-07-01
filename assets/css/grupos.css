@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1c1b22;
+}
+
+.cabecalho{
+    width: 100%;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: #fff;
+    font-weight: normal; 
+}
+
+.cabecalho img{
+    width: 40px;
+}
+
+.icon-rtl {
+    padding-left: 10px;  /* Adicione esta linha para o padding à esquerda */
+    padding-right: 5px;
+    border-radius: 50px;
+    border: none;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+    background-size: 28px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white; 
+    height: 25px;
+}
+
+.pesquisa{
+    margin-bottom: 5px;
+}
+
+
+.titulo{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    color: #fff;
+    margin-left: 22px;
+    font-weight: normal; 
+}
+
+.gr{
+    width: 100%;
+    border-color: grey;
+}
+
+.titulo img{
+    width: 25px;
+}
+
+hr{
+    width: 90%;
+    border: 0.1px solid #fff;
+}
+
+.Chat{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.Chat img{
+    width: 30px;
+}
+
+.Chat .m1{
+    width: 14px;
+}
+
+.vermais{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vermais a{
+    color: blue;
+    text-decoration: none;
+}
+
+
+/*Esses códigos irão garantir que o placeholder seja exibido em preto 
+nos navegadores Chrome, Firefox, Microsoft Edge, Safari e Internet Explorer.*/
+::-webkit-input-placeholder {
+    color: black;
+}
+ 
+:-moz-placeholder {
+    color: black;
+}
+ 
+::-moz-placeholder {
+    color: black;
+}
+ 
+:-ms-input-placeholder {
+    color: black;
+}
+
+::placeholder {
+    color: black;
+}

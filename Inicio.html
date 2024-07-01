@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/Logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/inicio.css">
+        <title>Página Mensagem Chat ABBA</title>
+    </head>
+
+
+    <body>
+        <div class="cabecalho">
+                        
+            <img src="assets/img/more.png" alt="Menu">
+            
+            <h1> PÚBLICO </h1>
+                
+        </div>
+
+        <div id="chat-container">
+            <div class="Chat">
+                <input class="otilia" type="text" placeholder="O">
+                <p class="otilia"> Otilia Marques <span> Pessoal, temos trabalho de IHM para fazer. </span> </p>
+                <p class="hora"> 16:46</p>
+            </div>
+    
+            <hr>
+    
+            <div class="Chat">
+                <input class="darilton" type="text" placeholder="D">
+                <p class="darilton"> Darilton Mario <span> Como assim? Não me Apercebi dessa! </span> </p>
+                <p class="hora"> 16:48</p>
+            </div>
+    
+            <hr> 
+    
+            <div class="Chat">
+                <input class="eugelice" type="text" placeholder="E">
+                <p class="eugelice"> Eugelice Yuye <span> É a Fase 3 Jovem! KKKKKKKKKKKKK. </span> </p>
+                <p class="hora"> 16:50</p>
+            </div>
+    
+            <hr>
+    
+            <div class="Chat">
+                <input class="oleg" type="text" placeholder="O">
+                <p class="oleg"> Oleg António <span> Aqui vai o que temos que fazer amigos: </span>
+                    <span> Prototipo de Baixa Fidelidade, </span> 
+                    <span> Prototipo de Alta Fidelidade e para mais</span> 
+                    <span> Consultar o enunciado, kkkkkkk.</span>
+                </p>
+                <p class="hora"> 16:52</p>
+            </div>
+    
+            <hr>
+    
+            <div class="Chat">
+                <input class="otilia" type="text" placeholder="O">
+                <p class="otilia"> Otilia Marques <span> Eugelice olha o Oleg já manda meme, kkk. </span> </p>
+                <p class="hora"> 16:54</p>
+            </div>
+    
+            <hr>
+    
+            <div class="Chat">
+                <input class="darilton" type="text" placeholder="D">
+                <p class="darilton"> Darilton Mario <span> Tou a ver mesmo, sou o Único sério aqui. </span> </p>
+                <p class="hora"> 17:00</p>
+            </div>
+    
+            <hr>
+    
+        </div>
+        
+        <div class="enviar">
+            <img src="assets/img/image.png" alt="Foto" id="uploadImage">
+            <input type="file" id="fileInput" accept="image/*">
+            <input type="text" id="message-input" placeholder="Escreva uma Mensagem!">
+            <img src="assets/img/send-message.png" id="send-button" class="foto" alt="Enviar">
+        </div>
+
+        <script>
+            document.getElementById('uploadImage').addEventListener('click', function() {
+                document.getElementById('fileInput').click();
+            });
+
+            document.getElementById('send-button').addEventListener('click', function() {
+                const messageInput = document.getElementById('message-input');
+                const messageText = messageInput.value.trim();
+                
+                if (messageText !== '') {
+                    const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+                    const chatContainer = document.getElementById('chat-container');
+                    
+                    const newChatDiv = document.createElement('div');
+                    newChatDiv.classList.add('Chat');
+                    
+                    const newPara = document.createElement('p');
+                    newPara.classList.add('user-message'); // Adicione uma classe específica para suas mensagens
+
+                    newPara.innerHTML = `
+                        <input class="user-icon" type="text" placeholder="U">
+                        <span>Seu Nome</span> <span>${messageText}</span>
+                    `;
+
+                    const timePara = document.createElement('p');
+                    timePara.classList.add('hora');
+                    timePara.textContent = currentTime;
+
+                    newChatDiv.appendChild(newPara);
+                    newChatDiv.appendChild(timePara);
+                    
+                    chatContainer.appendChild(newChatDiv);
+
+                    // Clear the input field
+                    messageInput.value = '';
+                    
+                    // Scroll to the bottom of the chat container
+                    chatContainer.scrollTop = chatContainer.scrollHeight;
+                }
+            });
+        </script>
+        
+    </body> 
+</html>
