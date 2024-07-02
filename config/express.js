@@ -11,8 +11,7 @@ module.exports = function () {
     app.use(express.static('./public'));
 
     //register routes
-    require("../app/routes/index.routes")(app);
-    require("../app/routes/groups.routes")(app);
+    require("../app/routes/views.routes")(app);
     require("../app/routes/user.routes")(app);
 
     return app;
