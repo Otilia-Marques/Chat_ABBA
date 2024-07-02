@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Otilia-Marques/Chat_ABBA#readme",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
   }
 }
