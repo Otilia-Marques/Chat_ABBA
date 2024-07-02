@@ -1,0 +1,29 @@
+{
+  "name": "chat_abba",
+  "version": "1.0.0",
+  "description": "Um simples chat para troca de mensages em grupo",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otilia-Marques/Chat_ABBA.git"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "socket.io"
+  ],
+  "author": "gumball, tini, ninguem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Otilia-Marques/Chat_ABBA/issues"
+  },
+  "homepage": "https://github.com/Otilia-Marques/Chat_ABBA#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
