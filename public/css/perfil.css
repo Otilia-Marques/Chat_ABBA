@@ -3,11 +3,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 body {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,99 +17,45 @@ body {
 .cabecalho{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: initial;
     align-items: center;
     color: #fff;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-h1{
-    margin-right: 80px;
-}
-
-.cabecalho h1 a{
+h2{
     color: #fff;
-    text-decoration: none;
-    cursor: pointer;
+    font-weight: normal; 
 }
 
 .cabecalho img{
-    width: 50px;
+    width: 40px;
+}
+
+.online{
+    margin-left: 20px;
+}
+
+.on .online{
+    width: 10px;
+    height: 10px;
+}
+
+.on{
+    width: 90%;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.on img{
+    width: 25px;
 }
 
 hr{
     width: 100%;
-    border: 0.1px solid #fff;
-}
-
-#chat-container{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #fff;
-}
-
-.Chat{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #fff;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.Chat input{
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    border: none;
-    font-size: 30px;
-    background-color: deeppink;
-}
-
-.Chat p{
-    color: deeppink;
-}
-
-.Chat span{
-    display: block;
-    color: #fff;
-}
-
-.Chat .hora{
-    color: #fff;
-}
-
-.enviar{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-
-.enviar img{
-    width: 50px;
-}
-
-.enviar .foto{
-    height: 30px;
-    width: 40px;
-}
-
-.enviar input{
-    height: 40px;
-    width: 230px;
-}
-
-#fileInput {
-    display: none; /* Oculta o input de arquivo */
 }
 
 .sidebar {
@@ -153,6 +98,30 @@ hr{
     top: -38px;
     left: 10px;
     width: 30px;
+}
+
+#chat-container{
+    width: 100%;
+    color: #fff;
+    margin-left: 14px;
+    margin-top: 8px;
+}
+
+.Chat{
+    width: 100%;
+    color: #fff;
+}
+
+.hr{
+    width: 50%;
+}
+
+.Chat p{
+    color: deeppink;
+}
+
+.Chat .hora{
+    color: #fff;
 }
 
 /*Esses códigos irão garantir que o placeholder seja exibido em preto 
