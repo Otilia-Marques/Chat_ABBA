@@ -21,12 +21,14 @@
                 <a href="/home">Pagina inicial</a>
                 <a href="/login">Utilizadores</a>
                 <a href="/groups">Grupos</a>
-                <a href="#">Logout</a>
+                <form action="/logout" method="get">
+                    <button type="submit">logout</button>
+                </form>
             </div>
         </div>
 
         <div class="pessoa">
-            <h2> Bem-Vindo, Eugelice </h2>
+            <h2> Bem-Vindo, <%=username%> </h2>
             <hr>
         </div>
 
