@@ -25,7 +25,11 @@
     "body-parser": "^1.20.2",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+<<<<<<< HEAD
     "express-session": "^1.18.0",
     "mongoose": "^8.4.4"
+=======
+    "nodemon": "^3.1.4"
+>>>>>>> 65c50d86894f966cdcaa2b16f36bcfb72037e98b
   }
 }

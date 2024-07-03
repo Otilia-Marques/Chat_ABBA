@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
 * {
     padding: 0;
@@ -28,89 +29,38 @@ h1{
     margin-right: 80px;
 }
 
-.cabecalho h1 a{
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .cabecalho img{
     width: 50px;
+}
+
+.cabecalho .foto{
+    width: 20px;
 }
 
 hr{
     width: 100%;
     border: 0.1px solid #fff;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 #chat-container{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     color: #fff;
+    margin-left: 14px;
 }
 
 .Chat{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     color: #fff;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.Chat input{
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    border: none;
-    font-size: 30px;
-    background-color: deeppink;
 }
 
 .Chat p{
     color: deeppink;
 }
 
-.Chat span{
-    display: block;
-    color: #fff;
-}
-
 .Chat .hora{
     color: #fff;
-}
-
-.enviar{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-
-.enviar img{
-    width: 50px;
-}
-
-.enviar .foto{
-    height: 30px;
-    width: 40px;
-}
-
-.enviar input{
-    height: 40px;
-    width: 230px;
-}
-
-#fileInput {
-    display: none; /* Oculta o input de arquivo */
 }
 
 .sidebar {

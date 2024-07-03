@@ -87,13 +87,10 @@ h2{
     height: 10px;
 }
 
-
-
-
-
-
-
-
+.on p a{
+    color: #fff;
+    text-decoration: none;
+}
 
 .vermais{
     margin-top: 10px;
